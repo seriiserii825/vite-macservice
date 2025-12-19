@@ -1,6 +1,7 @@
+@use "blocks/fonts";
 @use "blocks/variables";
 @use "blocks/base";
 @use "blocks/main-header";
-body {
-  background: red;
-}
+@use "blocks/main-wrap";
+@use "blocks/info-box";
+@use "blocks/notes.scss";

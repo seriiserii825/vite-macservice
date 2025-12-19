@@ -9,5 +9,5 @@ export default defineConfig({
     handlebars({
       partialDirectory: resolve(__dirname, "partials"),
     }),
-  ],
+  ]
 });

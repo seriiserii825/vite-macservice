@@ -1,2 +1,5 @@
 import './../scss/style.scss'
-console.log('Hello, TypeScript with SCSS!')
+import commesse from './modules/commese';
+document.addEventListener('DOMContentLoaded', () => {
+  commesse();
+});

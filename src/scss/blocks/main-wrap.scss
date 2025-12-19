@@ -1,0 +1,22 @@
+.main-wrap {
+  display: grid;
+  grid-template-columns: 1fr 23.17%;
+  gap: 32px;
+  padding: 32px;
+  height: 100vh;
+  overflow: hidden;
+}
+.main-wrap--notes-columns {
+  grid-template-columns: 1fr 45.26%;
+}
+
+.main-wrap--notes-columns .notes:not(.notes--two-columns) {
+  grid-template-columns: 1fr;
+}
+
+.main-wrap--notes-columns .info-box {
+  grid-template-columns: repeat(3, 1fr);
+}
+.main-wrap__right {
+  overflow: hidden;
+}

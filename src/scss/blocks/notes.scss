@@ -1,0 +1,36 @@
+.notes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+  column-count: 1;
+  column-gap: 16px;
+}
+.notes--two-columns {
+  column-count: unset;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-content: flex-start;
+  height: 100vh;
+}
+
+.notes--two-columns .notes__item {
+  width: calc(50% - 8px);
+}
+
+.notes__item {
+  position: relative;
+  /* padding: 42px 48px 42px 48px; */
+  padding: 21px 24px 21px 24px;
+  /* padding: clamp(24px, 1.25vw, 42px) clamp(28px, 1.04vw, 48px); */
+  font-size: 24px;
+  background: white;
+  border-radius: 16px;
+  /* break-inside: avoid; */
+  /* margin-bottom: 16px; */
+}
+.notes__item.active {
+  background: #fce7bb;
+}
