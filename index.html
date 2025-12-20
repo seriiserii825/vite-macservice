@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
     <title>Vite + SCSS</title>
-    <style>
-    </style>
+    <style></style>
   </head>
   <body>
     <div class="tv-container">
@@ -16,55 +15,88 @@
     </div>
     <script type="module" src="./src/js/main.ts"></script>
     <script>
-      // Данные для элементов сетки
-      const items = [
-        { date: "00/2025", type: "green", text: "Consegna materiali il 30/10" },
-        { date: "103/2025", type: "green", text: "Trapano col. Servizio: TCO08" },
-        { date: "106/2025", type: "green", text: "PLAY Squad, scherm tappeti" },
-        { date: "105/2025", type: "green", text: "Pressa Gasparini KBJ 105/3000" },
-        { date: "11/2025", type: "green", text: "Questa è la descrizione della commessa" },
-        { date: "118/2026", type: "green", text: "Questa è la descrizione della commessa" },
-        { date: "7/25", type: "green", text: "Questa è la descrizione della commessa" },
-        { date: "88/2025", type: "green", text: "Questa è la descrizione della commessa" },
-        { date: "15/2025", type: "green", text: "Questa è la descrizione della commessa" },
-        { date: "15/2025", type: "green", text: "Questa è la descrizione della commessa" },
-        { date: "15/2025", type: "green", text: "Questa è la descrizione della commessa" },
-        { date: "259/2026", type: "red", text: "Questa è la descrizione della commessa" },
-        { date: "145/2025", type: "red", text: "Questa è la descrizione della commessa" },
-        { date: "255/2025", type: "red", text: "Questa è la descrizione della commessa" },
-        { date: "88/2025", type: "green", text: "Questa è la descrizione della commessa" },
-        { date: "15/2025", type: "green", text: "Questa è la descrizione della commessa" },
-        { date: "15/2025", type: "green", text: "Questa è la descrizione della commessa" },
-        { date: "15/2025", type: "green", text: "Questa è la descrizione della commessa" },
-        { date: "259/2026", type: "red", text: "Questa è la descrizione della commessa" },
-        { date: "145/2025", type: "red", text: "Questa è la descrizione della commessa" },
-        { date: "255/2025", type: "red", text: "Questa è la descrizione della commessa" },
-      ];
-      // Данные для сайдбара
-      const sidebarItems = [
-        { text: "Materiali in arrivo per partner il 30/10/2025" },
-        { text: "Riunione operativa in sala verde" },
-        {
-          text: "Ci sono novità riguardanti le tessere carburanti, chiedere al banco informazioni",
-        },
-        { text: "Materiali edili in arrivo" },
-        { text: "Nuove direttive per la commessa 20, rivolgimi a Maurizio" },
-        { text: "Ricordate di controllare le scadenze delle vostre patenti" },
-        {
-          text: "Ci sono novità riguardanti le tessere carburanti, chiedere al banco informazioni",
-        },
-        { text: "Materiali edili in arrivo" },
-        { text: "Nuove direttive per la commessa 20, rivolgimi a Maurizio" },
-        { text: "Ricordate di controllare le scadenze delle vostre patenti" },
-        { text: "Ricordate di controllare le scadenze delle vostre patenti" },
-        {
-          text: "Ci sono novità riguardanti le tessere carburanti, chiedere al banco informazioni",
-        },
-        { text: "Materiali edili in arrivo" },
-        { text: "Nuove direttive per la commessa 20, rivolgimi a Maurizio" },
-        { text: "Ricordate di controllare le scadenze delle vostre patenti" },
-        { text: "Materiali edili in arrivo" },
-      ];
+      // // Данные для элементов сетки
+      // const items = [
+      //   { date: "00/2025", type: "green", text: "Consegna materiali il 30/10" },
+      //   { date: "103/2025", type: "green", text: "Trapano col. Servizio: TCO08" },
+      //   { date: "106/2025", type: "green", text: "PLAY Squad, scherm tappeti" },
+      //   { date: "105/2025", type: "green", text: "Pressa Gasparini KBJ 105/3000" },
+      //   { date: "11/2025", type: "green", text: "Questa è la descrizione della commessa" },
+      //   { date: "118/2026", type: "green", text: "Questa è la descrizione della commessa" },
+      //   { date: "7/25", type: "green", text: "Questa è la descrizione della commessa" },
+      //   { date: "88/2025", type: "green", text: "Questa è la descrizione della commessa" },
+      //   { date: "15/2025", type: "green", text: "Questa è la descrizione della commessa" },
+      //   { date: "15/2025", type: "green", text: "Questa è la descrizione della commessa" },
+      //   { date: "15/2025", type: "green", text: "Questa è la descrizione della commessa" },
+      //   { date: "259/2026", type: "red", text: "Questa è la descrizione della commessa" },
+      //   { date: "145/2025", type: "red", text: "Questa è la descrizione della commessa" },
+      //   { date: "255/2025", type: "red", text: "Questa è la descrizione della commessa" },
+      //   { date: "88/2025", type: "green", text: "Questa è la descrizione della commessa" },
+      //   { date: "15/2025", type: "green", text: "Questa è la descrizione della commessa" },
+      //   { date: "15/2025", type: "green", text: "Questa è la descrizione della commessa" },
+      //   { date: "15/2025", type: "green", text: "Questa è la descrizione della commessa" },
+      //   { date: "259/2026", type: "red", text: "Questa è la descrizione della commessa" },
+      //   { date: "145/2025", type: "red", text: "Questa è la descrizione della commessa" },
+      //   { date: "255/2025", type: "red", text: "Questa è la descrizione della commessa" },
+      // ];
+      // // Данные для сайдбара
+      // const sidebarItems = [
+      //   { text: "Materiali in arrivo per partner il 30/10/2025" },
+      //   { text: "Riunione operativa in sala verde" },
+      //   {
+      //     text: "Ci sono novità riguardanti le tessere carburanti, chiedere al banco informazioni",
+      //   },
+      //   { text: "Materiali edili in arrivo" },
+      //   { text: "Nuove direttive per la commessa 20, rivolgimi a Maurizio" },
+      //   { text: "Ricordate di controllare le scadenze delle vostre patenti" },
+      //   {
+      //     text: "Ci sono novità riguardanti le tessere carburanti, chiedere al banco informazioni",
+      //   },
+      //   { text: "Materiali edili in arrivo" },
+      //   { text: "Nuove direttive per la commessa 20, rivolgimi a Maurizio" },
+      //   { text: "Ricordate di controllare le scadenze delle vostre patenti" },
+      //   { text: "Ricordate di controllare le scadenze delle vostre patenti" },
+      //   {
+      //     text: "Ci sono novità riguardanti le tessere carburanti, chiedere al banco informazioni",
+      //   },
+      //   { text: "Materiali edili in arrivo" },
+      //   { text: "Nuove direttive per la commessa 20, rivolgimi a Maurizio" },
+      //   { text: "Ricordate di controllare le scadenze delle vostre patenti" },
+      //   { text: "Materiali edili in arrivo" },
+      // ];
+
+      function fetchData() {
+        // const url = "https://macservice.altuofianco.com/api/v1/tvfront";
+        const url = "http://localhost:8080/api/v1/tvfront";
+        fetch(url, {
+          headers: {
+            appToken: "RkJBUfQZSCNwnfZlJub4",
+            "Content-Type": "application/json",
+          },
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data.data);
+            const commesse_list = data.data.commesse_list;
+            let note_list = data.data.note_list;
+
+            // // note_list = note_list.slice(0, 7); // Limit to first 20 notes
+            if (commesse_list) {
+              renderGrid(commesse_list);
+            }
+            if (note_list) {
+              renderSidebar(note_list);
+              // drawNotesItems(note_list);
+              // updateNotesColumns();
+            }
+          })
+          .catch((error) => {
+            console.error("Error fetching data:", error);
+            infoBox.innerHTML =
+              '<div class="info-box__item info-box__item--error">Caricamento dati non riuscito</div>';
+          });
+      }
+      fetchData();
       // Функция для определения количества колонок в сетке
       function getGridColumns(itemCount) {
         if (itemCount <= 4) return 2;
@@ -76,53 +108,52 @@
         return itemCount <= 3 ? 1 : 2;
       }
       // Рендеринг сетки
-      function renderGrid() {
+      function renderGrid(commesse_list) {
         const gridSection = document.getElementById("gridSection");
-        const columns = getGridColumns(items.length);
+        const columns = getGridColumns(commesse_list.length);
         if (window.innerWidth > 992) {
           gridSection.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
         } else {
           gridSection.style.gridTemplateColumns = "";
         }
-        gridSection.innerHTML = items
+        gridSection.innerHTML = commesse_list
           .map(
             (item) => `
-        <div class="grid-item ${item.type}">
-          <div class="item-date">${item.date}</div>
-          <div class="item-text">${item.text}</div>
-        </div>
-      `
+          <div class="grid-item grid-item--${item.attiva}">
+            <div class="item-date">${item.Nome}</div>
+            ${item.Note ? `<div class="item-text">${item.Note}</div>` : ""}
+          </div>
+        `
           )
           .join("");
       }
       // Рендеринг сайдбара
-      function renderSidebar() {
+      function renderSidebar(note_list) {
         const sidebar = document.getElementById("sidebar");
-        const columns = getSidebarColumns(sidebarItems.length);
+        const columns = getSidebarColumns(note_list.length);
         if (window.innerWidth > 992) {
           sidebar.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
         } else {
           sidebar.style.gridTemplateColumns = "";
         }
-        sidebar.innerHTML = sidebarItems
+        sidebar.innerHTML = note_list
           .map(
             (item) => `
-        <div class="sidebar-item">
-          <span class="sidebar-bullet">•</span>
-          <p class="sidebar-text">${item.text}</p>
-        </div>
-      `
+          <div class="sidebar-item sidebar-item--${item.priorità}">
+            ${item.nota}
+          </div>
+        `
           )
           .join("");
       }
       // Инициализация
-      renderGrid();
-      renderSidebar();
+      // renderGrid();
+      // renderSidebar();
       // Перерендер при изменении размера окна (опционально)
-      window.addEventListener("resize", () => {
-        renderGrid();
-        renderSidebar();
-      });
+      // window.addEventListener("resize", () => {
+      //   renderGrid();
+      //   renderSidebar();
+      // });
     </script>
   </body>
 </html>

@@ -10,9 +10,15 @@
   border-radius: 0.5rem;
   padding: 3.2rem;
   display: flex;
-  align-items: flex-start;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  gap: 1.6rem;
   min-height: fit-content;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.sidebar-item ul {
+  list-style-type: disc;
+  margin-left: 1.6rem;
+  padding-left: 2.4rem;
 }
 .sidebar,
 .grid-section {
@@ -21,9 +27,6 @@
 .grid-item,
 .sidebar-item {
   border-radius: 3.2rem;
-}
-.sidebar-text {
-  flex: 1;
 }
 @media screen and (max-width: 992px) {
   .sidebar {
